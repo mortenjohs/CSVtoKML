@@ -1,0 +1,17 @@
+Add column of latitudes and longtitudes for addresses in a spreadsheet and generate a corresponding KML file.
+  Usage: CSVtoKML.rb [options]
+
+    -a ADDRESS_COLUMN_NAME,          Name of the column containing addresses.
+ Default: Address
+        --address-column-name
+    -s SEPARATING_CHARACTER,         Separating character in the files.
+ Default: |
+        --separating-character
+    -f, --in-file IN_FILE            File to process.
+ Default: Default.tsv
+    -m, --map-name MAP-NAME          Name of the map.
+ Default: Map
+    -e, --engine-name ENGINE-NAME    Name of the geocoding engine eg google, yahoo.
+ Default: yahoo
+    -h, --help                       Display help functions.
+
