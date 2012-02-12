@@ -4,7 +4,7 @@ Install required gems.
 
 gem install geocoder
 gem install schleyfox-ruby_kml --source http://gems.github.com
-gem install optparse
+gem install OptionParser
 
 Usage
 =====
