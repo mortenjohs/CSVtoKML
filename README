@@ -1,3 +1,14 @@
+Setup
+=====
+Install required gems.
+
+gem install geocoder
+gem install schleyfox-ruby_kml --source http://gems.github.com
+gem install optparse
+
+Usage
+=====
+
 Add column of latitudes and longtitudes for addresses in a spreadsheet and generate a corresponding KML file.
   Usage: CSVtoKML.rb [options]
 
