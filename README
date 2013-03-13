@@ -1,59 +1,39 @@
-<<<<<<< HEAD
 Setup
 =====
 Install required gems.
 
-gem install geocoder
-gem install schleyfox-ruby_kml --source http://gems.github.com
-gem install optparse
+bundle install
 
 Usage
 =====
 
 Add column of latitudes and longtitudes for addresses in a spreadsheet and generate a corresponding KML file.
   Usage: CSVtoKML.rb [options]
-
+  
     -a ADDRESS_COLUMN_NAME,          Name of the column containing addresses.
  Default: Address
         --address-column-name
+    -u UTL_COLUMN_NAME,              Name of the column containing the link/url.
+ Default: href
+        --link-column-name
+    -b, --base-url BASE_URL          Base URL.
+ Default: href
+    -n NAME_COLUMN_NAME,             Name of the column containing name.
+ Default: 0
+        --name-column-name
+    -d DESCRIPTION_COLUMN_NAME,      Name of the column containing description.
+ Default: description
+        --description_column_name
     -s SEPARATING_CHARACTER,         Separating character in the files.
- Default: |
+ Default: tab
         --separating-character
     -f, --in-file IN_FILE            File to process.
  Default: Default.tsv
-    -m, --map-name MAP-NAME          Name of the map.
+    -m, --map-name MAP_NAME          Name of the map.
  Default: Map
-    -e, --engine-name ENGINE-NAME    Name of the geocoding engine eg google, yahoo.
- Default: yahoo
+    -e, --engine-name ENGINE_NAME    Name of the geocoding engine eg google, yahoo.
+ Default: nominatim
+    -t TEXT_TO_ADD_TO_ADDRESS,       Text to add to addresses.
+ Default: 
+        --text-to-add
     -h, --help                       Display help functions.
-
-=======
-Setup
-=====
-Install required gems.
-
-gem install geocoder
-gem install schleyfox-ruby_kml --source http://gems.github.com
-gem install OptionParser
-
-Usage
-=====
-
-Add column of latitudes and longtitudes for addresses in a spreadsheet and generate a corresponding KML file.
-  Usage: CSVtoKML.rb [options]
-
-    -a ADDRESS_COLUMN_NAME,          Name of the column containing addresses.
- Default: Address
-        --address-column-name
-    -s SEPARATING_CHARACTER,         Separating character in the files.
- Default: |
-        --separating-character
-    -f, --in-file IN_FILE            File to process.
- Default: Default.tsv
-    -m, --map-name MAP-NAME          Name of the map.
- Default: Map
-    -e, --engine-name ENGINE-NAME    Name of the geocoding engine eg google, yahoo.
- Default: yahoo
-    -h, --help                       Display help functions.
-
->>>>>>> 8936805f9d166d5cac14aa8e3fcd0973024a8beb
