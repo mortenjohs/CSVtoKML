@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'geocoder'
+gem 'OptionParser'
+source 'http://gems.github.com'
+gem 'schleyfox-ruby_kml'      
